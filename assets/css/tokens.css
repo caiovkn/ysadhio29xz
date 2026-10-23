@@ -1,0 +1,101 @@
+/* Paleta mais dark, acento roxo — referência visual de produto, conteúdo do briefing. */
+
+:root {
+  --cor-noite: #050508;
+  --cor-marinho-profundo: #050508;
+  --cor-marinho: #0B0B12;
+
+  /* Roxo de acento, ícones e CTA
+     Sobre #030508 como elemento não textual: ok.
+     Texto escuro sobre o roxo claro: ~7:1 */
+  --cor-azul: #A78BFA;
+  --cor-dourado: #A78BFA;
+  --cor-dourado-escuro: #A78BFA;
+  --cor-dourado-claro: #C4B5FD;
+  --cor-azul-botao: #F4F6F8;
+  --cor-botao-texto: #111111;
+
+  --cor-superficie: #050508;
+  --cor-neutro-claro: #050508;
+  --cor-card: rgba(12, 12, 20, 0.62);
+  --cor-vidro: rgba(14, 14, 22, 0.55);
+  --cor-brilho: rgba(167, 139, 250, 0.55);
+  --cor-neon: #C4B5FD;
+  --malha-a: rgba(124, 58, 237, 0.22);
+  --malha-b: rgba(56, 189, 248, 0.08);
+
+  --cor-branco: #F4F6F8;
+  --cor-grafite: #D2D7E0;
+  --cor-grafite-medio: #8B95A5;
+
+  --cor-neutro-borda: #1C1C24;
+  --cor-neutro-contorno: #7D8B9C;
+
+  --cor-erro: #F0A19A;
+  --cor-sucesso: #8FCB9B;
+
+  --fonte-titulo: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                  "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  --fonte-corpo: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+  --fonte-mono: ui-monospace, "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+
+  --fs-100: 0.8125rem;
+  --fs-200: 1rem;
+  --fs-300: 1.125rem;
+  --fs-400: 1.25rem;
+  --fs-500: 1.5rem;
+  --fs-600: 1.75rem;
+  --fs-700: clamp(1.75rem, 1.3rem + 1.6vw, 2.15rem);
+  --fs-800: clamp(2.2rem, 1.4rem + 3.4vw, 3.6rem);
+
+  --fw-regular: 400;
+  --fw-semibold: 600;
+
+  --lh-apertada: 1.2;
+  --lh-padrao: 1.6;
+  --lh-folgada: 1.75;
+
+  --medida: 62ch;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4.5rem;
+  --space-10: 6rem;
+  --space-11: 8rem;
+
+  --container-max: 78rem;
+  --container-pad: var(--space-4);
+  --gap-grid: var(--space-5);
+
+  --raio-1: 8px;
+  --raio-2: 12px;
+  --raio-3: 18px;
+
+  --sombra-1: 0 10px 40px -24px rgba(167, 139, 250, 0.55);
+  --sombra-2: 0 20px 50px -28px rgba(167, 139, 250, 0.45);
+  --sombra-3: 0 0 80px -20px rgba(167, 139, 250, 0.35);
+
+  --alvo-toque: 44px;
+  --borda-foco: 2px;
+  --cor-foco: var(--cor-dourado-claro);
+  --transicao: 180ms ease;
+}
+
+.superficie-escura {
+  --cor-foco: var(--cor-dourado-claro);
+  background: var(--cor-noite);
+  color: var(--cor-branco);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transicao: 0ms;
+  }
+}

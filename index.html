@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="home.title">Fitocrops Agroscience | Crop intelligence</title>
+  <meta name="description" content="Fitocrops is an agricultural AI platform. Field data in, a recommendation out." data-i18n-content="home.description">
+  <link rel="canonical" href="https://[DOMÍNIO]/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fitocrops Agroscience">
+  <meta property="og:locale" content="en_US" data-i18n-content="meta.ogLocale">
+  <meta property="og:title" content="Fitocrops Agroscience | Crop intelligence" data-i18n-content="home.title">
+  <meta property="og:description" content="Fitocrops is an agricultural AI platform. Field data in, a recommendation out." data-i18n-content="home.description">
+  <meta property="og:url" content="https://[DOMÍNIO]/">
+  <meta property="og:image" content="https://[DOMÍNIO]/assets/img/og-default.png">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/vitrine.css">
+  <link rel="stylesheet" href="assets/css/campo.css">
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      try {
+        var visto = sessionStorage.getItem('fitocrops-intro') === '1';
+        var reduzido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        document.documentElement.classList.add((visto || reduzido) ? 'intro-vista' : 'intro-aberta');
+      } catch (e) {}
+    })();
+  </script>
+  <script src="assets/js/copy.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "SoftwareApplication"],
+    "name": "Fitocrops Agroscience",
+    "legalName": "Fitocrops Agroscience LTDA",
+    "url": "https://[DOMÍNIO]/",
+    "logo": "https://[DOMÍNIO]/assets/img/logo-provisoria.svg",
+    "email": "contact@fitocropsgroups.com",
+    "taxID": "61.479.389/0001-94",
+    "foundingDate": "2025-06-27",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "founder": { "@type": "Person", "name": "Gerson Luis dos Santos Rodrigues Junior" },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Roraima, 1000, Edif. 02, Sala 25, Conj. Coworking Modulo 2, Camobi",
+      "addressLocality": "Santa Maria",
+      "addressRegion": "RS",
+      "postalCode": "97105-340",
+      "addressCountry": "BR"
+    },
+    "areaServed": "BR",
+    "knowsAbout": [
+      "Agritech",
+      "Artificial intelligence",
+      "Google Cloud",
+      "Vertex AI",
+      "BigQuery",
+      "Crop intelligence"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="intro" id="intro" role="dialog" aria-label="Fitocrops">
+    <div class="intro__campo" aria-hidden="true"></div>
+    <p class="intro__marca"></p>
+    <button class="intro__pular" type="button" data-i18n="intro.skip">Skip</button>
+  </div>
+  <a class="skip-link" href="#conteudo" data-i18n="skip">Skip to main content</a>
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <a class="cabecalho__marca" href="index.html">
+        <img src="assets/img/logo-provisoria.svg" width="220" height="40" alt="Fitocrops Agroscience — home" data-i18n-alt="logo.alt">
+      </a>
+      <button class="cabecalho__alternador somente-js" type="button" id="alternador-menu" aria-expanded="false" aria-controls="menu-principal">
+        <span class="cabecalho__alternador-barras" aria-hidden="true"></span>
+        <span class="visualmente-oculto" data-i18n="nav.open">Open menu</span>
+      </button>
+      <nav class="cabecalho__nav" id="menu-principal" aria-label="Main" data-i18n-aria="nav.label">
+                <ul class="menu">
+          <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+          <li><a href="servicos.html" data-i18n="nav.product">Product</a></li>
+          <li><a href="tecnologia.html" data-i18n="nav.stack">Stack</a></li>
+          <li><a href="culturas.html" data-i18n="nav.crops">Crops</a></li>
+          <li><a href="metodo.html" data-i18n="nav.method">Method</a></li>
+          <li><a href="equipe.html" data-i18n="nav.team">Team</a></li>
+          <li><a href="sobre.html" data-i18n="nav.about">About</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="contato.html" class="menu__destaque" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cabecalho__acoes">
+        <div class="idioma" role="group" aria-label="Language" data-i18n-aria="lang.label">
+          <button type="button" class="idioma__btn" data-lang-set="en" aria-pressed="true">EN</button>
+          <button type="button" class="idioma__btn" data-lang-set="pt" aria-pressed="false">PT</button>
+        </div>
+        <a class="botao cabecalho__cta" href="contato.html" data-i18n="cta.talk">Talk to us</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="secao secao--hero hero hero--vitrine">
+      <div class="container hero-grade">
+        <div class="hero__conteudo">
+          <p class="familia-servicos__titulo" data-i18n="home.kicker">AI product · Agritech</p>
+          <h1 data-i18n="home.h1">Crop intelligence the field can use.</h1>
+          <p class="hero__lead" data-i18n="home.lead">Fitocrops reads farm data and returns a recommendation on the grower’s dashboard.</p>
+          <div class="fila-botoes">
+            <a class="botao" href="servicos.html" data-i18n="home.see">See the product</a>
+            <a class="botao botao--secundario" href="contato.html" data-i18n="cta.talk">Talk to us</a>
+          </div>
+          <div class="fatos">
+            <p class="fato">
+              <span class="fato__n" data-conta="5">5</span>
+              <span class="fato__l" data-i18n="fact.l1">Modules</span>
+            </p>
+            <p class="fato">
+              <span class="fato__n" data-conta="6">6</span>
+              <span class="fato__l" data-i18n="fact.l2">Steps</span>
+            </p>
+            <p class="fato">
+              <span class="fato__n" data-conta="5">5</span>
+              <span class="fato__l" data-i18n="fact.l4">Partners</span>
+            </p>
+            <p class="fato">
+              <span class="fato__n" data-conta="2025">2025</span>
+              <span class="fato__l" data-i18n="fact.l3">Founded</span>
+            </p>
+          </div>
+          <p class="faixa-status"><i aria-hidden="true"></i><span data-i18n="status.line">Company active since 27 June 2025. The product is in build. This site describes that work — no invented clients, hectares, or revenue.</span></p>
+        </div>
+        <aside class="talhao luz" aria-label="Sample field reading" data-i18n-aria="stage.label">
+          <div class="talhao__topo">
+            <span data-i18n="stage.kicker">Plot 04 · sample</span>
+            <span class="talhao__vivo"><i aria-hidden="true"></i><span data-i18n="stage.live">Simulation</span></span>
+          </div>
+          <div class="talhao__mapa" aria-hidden="true">
+            <span class="cel cel--media" style="--d:.1s"></span>
+            <span class="cel cel--forte" style="--d:.4s"></span>
+            <span class="cel cel--forte" style="--d:.2s"></span>
+            <span class="cel cel--media" style="--d:.6s"></span>
+            <span class="cel cel--ok" style="--d:.3s"></span>
+            <span class="cel cel--fraca" style="--d:.8s"></span>
+            <span class="cel cel--media" style="--d:.5s"></span>
+            <span class="cel cel--forte" style="--d:.15s"></span>
+            <span class="cel cel--forte" style="--d:.7s"></span>
+            <span class="cel cel--media" style="--d:.25s"></span>
+            <span class="cel cel--ok" style="--d:.9s"></span>
+            <span class="cel cel--fraca" style="--d:.35s"></span>
+            <span class="cel cel--alerta" style="--d:.2s"></span>
+            <span class="cel cel--alerta" style="--d:.45s"></span>
+            <span class="cel cel--media" style="--d:.55s"></span>
+            <span class="cel cel--forte" style="--d:.1s"></span>
+            <span class="cel cel--media" style="--d:.65s"></span>
+            <span class="cel cel--forte" style="--d:.3s"></span>
+            <span class="cel cel--ok" style="--d:.85s"></span>
+            <span class="cel cel--fraca" style="--d:.4s"></span>
+            <span class="cel cel--alerta" style="--d:.2s"></span>
+            <span class="cel cel--media" style="--d:.5s"></span>
+            <span class="cel cel--forte" style="--d:.75s"></span>
+            <span class="cel cel--media" style="--d:.15s"></span>
+            <span class="cel cel--ok" style="--d:.95s"></span>
+            <span class="cel cel--forte" style="--d:.35s"></span>
+            <span class="cel cel--media" style="--d:.6s"></span>
+            <span class="cel cel--fraca" style="--d:.25s"></span>
+            <span class="cel cel--media" style="--d:.45s"></span>
+            <span class="cel cel--forte" style="--d:.8s"></span>
+            <span class="cel cel--forte" style="--d:.1s"></span>
+            <span class="cel cel--media" style="--d:.55s"></span>
+            <i class="talhao__scan"></i>
+          </div>
+          <dl class="talhao__meta">
+            <div><dt data-i18n="stage.plot">Plot</dt><dd data-i18n="stage.plotV">04 · west edge</dd></div>
+            <div><dt data-i18n="stage.window">Window</dt><dd data-i18n="stage.windowV">This week</dd></div>
+            <div><dt data-i18n="stage.model">Model</dt><dd data-i18n="stage.modelV">version on the slip</dd></div>
+          </dl>
+          <p class="talhao__rec" data-i18n="stage.rec">Stress on the west edge. Walk that strip this week. Same reading, same model version.</p>
+          <p class="nota-amostra" data-i18n="stage.note">A drawn plot. Not a farm connected to this site.</p>
+        </aside>
+      </div>
+    </section>
+
+    <div class="letreiro" aria-hidden="true">
+      <div class="letreiro__trilho">
+        <span>Vertex AI</span><span>BigQuery</span><span>Cloud Storage</span><span>Cloud Run</span><span>GKE</span><span>IAM</span>
+        <span data-i18n="mq.1">Field vision</span><span data-i18n="mq.2">Data pipeline</span><span data-i18n="mq.3">Models</span><span data-i18n="mq.4">Inference</span><span data-i18n="mq.5">Dashboard</span>
+        <span data-i18n="mq.6">Plot</span><span data-i18n="mq.7">Season</span><span data-i18n="mq.8">Sensor</span><span data-i18n="mq.9">Image</span><span data-i18n="mq.10">Weather</span>
+        <span>Vertex AI</span><span>BigQuery</span><span>Cloud Storage</span><span>Cloud Run</span><span>GKE</span><span>IAM</span>
+        <span data-i18n="mq.1">Field vision</span><span data-i18n="mq.2">Data pipeline</span><span data-i18n="mq.3">Models</span><span data-i18n="mq.4">Inference</span><span data-i18n="mq.5">Dashboard</span>
+        <span data-i18n="mq.6">Plot</span><span data-i18n="mq.7">Season</span><span data-i18n="mq.8">Sensor</span><span data-i18n="mq.9">Image</span><span data-i18n="mq.10">Weather</span>
+      </div>
+    </div>
+
+    <section class="secao" aria-labelledby="o-vao">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="pain.kicker">The gap</p>
+          <h2 id="o-vao" data-i18n="pain.title">The data is already on the farm. The decision still is not.</h2>
+          <p data-i18n="pain.lead">Fitocrops exists for that gap. Not for another report.</p>
+        </div>
+        <div class="grade-densa">
+          <article class="dor"><h3 data-i18n="pain.1t">Eyes do not scale</h3><p data-i18n="pain.1">One agronomist cannot walk every edge of every plot in the same week.</p></article>
+          <article class="dor"><h3 data-i18n="pain.2t">Files do not talk</h3><p data-i18n="pain.2">Images, weather, machines, and notebook lines sit in different places.</p></article>
+          <article class="dor"><h3 data-i18n="pain.3t">A model with no face</h3><p data-i18n="pain.3">A notebook result never reaches the person who sprays or irrigates.</p></article>
+          <article class="dor"><h3 data-i18n="pain.4t">No version</h3><p data-i18n="pain.4">If last month’s call cannot be opened again, it cannot be improved.</p></article>
+          <article class="dor"><h3 data-i18n="pain.5t">A confident miss</h3><p data-i18n="pain.5">A score with no “this does not fit” line is worse than silence.</p></article>
+          <article class="dor"><h3 data-i18n="pain.6t">The season moves</h3><p data-i18n="pain.6">The useful answer is for this window, not for a slide deck in the off-season.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="o-produto">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="home.plat">Platform</p>
+          <h2 id="o-produto" data-i18n="home.mods">Five modules. One product.</h2>
+          <p data-i18n="home.modsLead">The model is the product. The grower is the user.</p>
+        </div>
+        <div class="grade-densa">
+          <a class="card-servico" id="visao" href="servicos.html#visao">
+            <span class="card-servico__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <h3 class="card-servico__titulo" data-i18n="home.m1t">Field vision</h3>
+            <p class="card-servico__escopo" data-i18n="home.m1">Images and field readings go in together. The model marks what needs a look this week.</p>
+          </a>
+          <a class="card-servico" id="dados" href="servicos.html#dados">
+            <span class="card-servico__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="8" cy="18" r="2"/><circle cx="17" cy="17" r="2"/><path d="M8 7l8 1M7 8l1 8M18 10l-1 5M10 18l5-1"/></svg></span>
+            <h3 class="card-servico__titulo" data-i18n="home.m2t">Data pipeline</h3>
+            <p class="card-servico__escopo" data-i18n="home.m2">Ingest, clean, keep a history. Cloud Storage on the way in. BigQuery for the record.</p>
+          </a>
+          <a class="card-servico" id="modelos" href="servicos.html#modelos">
+            <span class="card-servico__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l1.2 3.6L17 8l-3.8 1.4L12 13l-1.2-3.6L7 8l3.8-1.4z"/><path d="M19 14l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/><path d="M5 15l.6 1.6L7.2 17 5.6 17.6 5 19.2 4.4 17.6 2.8 17l1.6-.4z"/></svg></span>
+            <h3 class="card-servico__titulo" data-i18n="home.m3t">Models</h3>
+            <p class="card-servico__escopo" data-i18n="home.m3">Train and version on Vertex AI. The crop problem sets what the model learns.</p>
+          </a>
+          <a class="card-servico" id="inferencia" href="servicos.html#inferencia">
+            <span class="card-servico__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 10-14h-7z"/></svg></span>
+            <h3 class="card-servico__titulo" data-i18n="home.m4t">Inference</h3>
+            <p class="card-servico__escopo" data-i18n="home.m4">An endpoint the operation can call. Cloud Run or GKE, depending on load.</p>
+          </a>
+          <a class="card-servico" id="painel" href="servicos.html#painel">
+            <span class="card-servico__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 20h10M8 9h4M8 13h8"/></svg></span>
+            <h3 class="card-servico__titulo" data-i18n="home.m5t">Grower dashboard</h3>
+            <p class="card-servico__escopo" data-i18n="home.m5">A recommendation on a screen. Not a notebook.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="a-leitura">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="read.kicker">Reading</p>
+          <h2 id="a-leitura" data-i18n="read.title">What the operation sees</h2>
+          <p data-i18n="read.lead">A line, a version, and a log. The numbers below are a sample slip, not a live score from a farm.</p>
+        </div>
+        <div class="leitura">
+          <div class="diario" data-diario>
+            <div class="diario__topo">
+              <span data-i18n="demo.kicker">Product preview</span>
+              <span class="diario__vivo"><i aria-hidden="true"></i><span data-i18n="stage.live">Simulation</span></span>
+            </div>
+            <ol class="diario__lista"></ol>
+            <p class="nota-amostra" data-i18n="demo.hint">A simulation of the recommendation — not a live farm.</p>
+          </div>
+          <div>
+            <article class="metro-card">
+              <div class="metro-linha"><span data-i18n="meter.1t">Strip marked for a walk</span><span>72%</span></div>
+              <span class="metro" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72" aria-label="Strip marked for a walk"><span class="metro__fill" data-metro="72"></span></span>
+            </article>
+            <article class="metro-card">
+              <div class="metro-linha"><span data-i18n="meter.2t">Weather join attached</span><span>100%</span></div>
+              <span class="metro" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-label="Weather join attached"><span class="metro__fill" data-metro="100"></span></span>
+            </article>
+            <article class="metro-card">
+              <div class="metro-linha"><span data-i18n="meter.3t">Readings that did not fit</span><span>18%</span></div>
+              <span class="metro" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="18" aria-label="Readings that did not fit"><span class="metro__fill" data-metro="18"></span></span>
+            </article>
+            <p class="nota-amostra" data-i18n="read.sample">Sample only. Fitocrops does not publish a client metric on this site.</p>
+          </div>
+        </div>
+        <div class="demo" id="demo-ia" aria-label="Product preview" style="margin-top:1.5rem">
+          <div class="demo__barra">
+            <span class="demo__dot" aria-hidden="true"></span>
+            <span data-i18n="demo.kicker">Product preview</span>
+          </div>
+          <div class="demo__chat">
+            <p class="demo__msg demo__msg--in" data-demo="in" hidden></p>
+            <p class="demo__msg demo__msg--out" data-demo="out" hidden></p>
+          </div>
+          <p class="demo__hint" data-i18n="demo.hint">A simulation of the recommendation — not a live farm.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="como-roda">
+      <div class="container">
+        <div class="secao__intro">
+          <h2 id="como-roda" data-i18n="home.flow">How a reading moves</h2>
+          <p data-i18n="home.flowLead">Six steps, from the field to the text the operation opens.</p>
+        </div>
+        <ol class="fluxo fluxo--seis fluxo--vivo">
+          <li class="fluxo__item">
+            <span class="fluxo__num">01</span>
+            <h3 data-i18n="home.s1t">Field</h3>
+            <p data-i18n="home.s1">An image, a sensor, or a note the farm already keeps.</p>
+          </li>
+          <li class="fluxo__item">
+            <span class="fluxo__num">02</span>
+            <h3 data-i18n="home.s2t">Data</h3>
+            <p data-i18n="home.s2">It lands in the pipeline, versioned, so you can go back to it.</p>
+          </li>
+          <li class="fluxo__item">
+            <span class="fluxo__num">03</span>
+            <h3 data-i18n="home.s3t">Train</h3>
+            <p data-i18n="home.s3">The crop problem becomes a model. Vertex AI holds the version.</p>
+          </li>
+          <li class="fluxo__item">
+            <span class="fluxo__num">04</span>
+            <h3 data-i18n="home.s4t">Infer</h3>
+            <p data-i18n="home.s4">The operation asks. The endpoint answers in that same frame.</p>
+          </li>
+          <li class="fluxo__item">
+            <span class="fluxo__num">05</span>
+            <h3 data-i18n="home.s5t">Recommend</h3>
+            <p data-i18n="home.s5">A line on the dashboard. The grower does not open a notebook.</p>
+          </li>
+          <li class="fluxo__item">
+            <span class="fluxo__num">06</span>
+            <h3 data-i18n="home.s6t">Adjust</h3>
+            <p data-i18n="home.s6">What the field did comes back. The next model starts there.</p>
+          </li>
+        </ol>
+        <p class="fecho-secao"><a href="metodo.html" data-i18n="meth.more">The method</a></p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="limites">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="bound.kicker">Limits</p>
+          <h2 id="limites" data-i18n="bound.title">What comes back. What stays out.</h2>
+          <p data-i18n="bound.lead">The product is a recommendation with a boundary. The boundary is part of the delivery.</p>
+        </div>
+        <div class="duas">
+          <article class="recorte">
+            <h3 data-i18n="bound.inTitle">On the slip</h3>
+            <ul>
+              <li data-i18n="bound.i1">The plot cut you sent</li>
+              <li data-i18n="bound.i2">What the model marked, with the version</li>
+              <li data-i18n="bound.i3">The window — this week, this pass, this plot</li>
+              <li data-i18n="bound.i4">What this reading left out</li>
+              <li data-i18n="bound.i5">A clear miss when the data does not fit</li>
+              <li data-i18n="bound.i6">The words the operation already uses</li>
+            </ul>
+          </article>
+          <article class="recorte">
+            <h3 data-i18n="bound.outTitle">Not on the slip</h3>
+            <ul>
+              <li data-i18n="bound.o1">A replacement for the agronomist</li>
+              <li data-i18n="bound.o2">A yield promise</li>
+              <li data-i18n="bound.o3">A price list printed before we see the operation</li>
+              <li data-i18n="bound.o4">A client logo we do not have</li>
+              <li data-i18n="bound.o5">A hectare count invented for the homepage</li>
+              <li data-i18n="bound.o6">A notebook the grower has to open</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="entradas">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="in.kicker">Intake</p>
+          <h2 id="entradas" data-i18n="in.title">What can enter the pipeline</h2>
+          <p data-i18n="in.lead">If the farm already keeps it, the pipeline is built to take it — with a source.</p>
+        </div>
+        <div class="grade-entradas">
+          <article class="entrada"><span class="entrada__ico">01</span><h3 data-i18n="in.1t">Image</h3><p data-i18n="in.1">Phone, drone, or a camera the operation already uses.</p></article>
+          <article class="entrada"><span class="entrada__ico">02</span><h3 data-i18n="in.2t">Weather</h3><p data-i18n="in.2">Station or grid. Joined to the plot, not floating in a tab.</p></article>
+          <article class="entrada"><span class="entrada__ico">03</span><h3 data-i18n="in.3t">Soil</h3><p data-i18n="in.3">A sample or a map the farm already paid for.</p></article>
+          <article class="entrada"><span class="entrada__ico">04</span><h3 data-i18n="in.4t">Machine</h3><p data-i18n="in.4">Passes, rates, and the trail the equipment writes.</p></article>
+          <article class="entrada"><span class="entrada__ico">05</span><h3 data-i18n="in.5t">Plot map</h3><p data-i18n="in.5">The boundary the operation already draws.</p></article>
+          <article class="entrada"><span class="entrada__ico">06</span><h3 data-i18n="in.6t">Notes</h3><p data-i18n="in.6">The line someone wrote after walking the field.</p></article>
+          <article class="entrada"><span class="entrada__ico">07</span><h3 data-i18n="in.7t">Season</h3><p data-i18n="in.7">Crop, stage, and the dates that frame the reading.</p></article>
+          <article class="entrada"><span class="entrada__ico">08</span><h3 data-i18n="in.8t">Yield</h3><p data-i18n="in.8">What came off, when the farm already records it. Fuel for the next version, not a trophy.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="cultivos">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="crop.kicker">Crops</p>
+          <h2 id="cultivos" data-i18n="crop.title">The crop sets the model.</h2>
+          <p data-i18n="crop.lead">Soy, rice, corn, wheat, pasture, horticulture. These are the readings the platform is designed to hold. Not a list of clients.</p>
+        </div>
+        <div class="grade-densa">
+          <article class="ficha"><span class="ficha__num">01</span><h3 data-i18n="crop.1t">Soy</h3><p data-i18n="crop.1">Canopy, stand gaps, and the spray window joined to weather.</p></article>
+          <article class="ficha"><span class="ficha__num">02</span><h3 data-i18n="crop.2t">Rice</h3><p data-i18n="crop.2">Water notes and canopy, in a crop Rio Grande do Sul already grows.</p></article>
+          <article class="ficha"><span class="ficha__num">03</span><h3 data-i18n="crop.3t">Corn</h3><p data-i18n="crop.3">Stage, machine pass, and the image of the stand.</p></article>
+          <article class="ficha"><span class="ficha__num">04</span><h3 data-i18n="crop.4t">Wheat</h3><p data-i18n="crop.4">A short season window. Disease look plus weather.</p></article>
+          <article class="ficha"><span class="ficha__num">05</span><h3 data-i18n="crop.5t">Pasture</h3><p data-i18n="crop.5">Cover, bare soil, and the grazing note.</p></article>
+          <article class="ficha"><span class="ficha__num">06</span><h3 data-i18n="crop.6t">Horticulture</h3><p data-i18n="crop.6">Short cycles. Small plots. Image does more of the work.</p></article>
+        </div>
+        <p class="fecho-secao"><a href="culturas.html" data-i18n="crop.more">Crop by crop</a></p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="nuvem">
+      <div class="container vitrine vitrine--duas">
+        <div>
+          <p class="familia-servicos__titulo" data-i18n="home.cloudKicker">Stack</p>
+          <h2 id="nuvem" data-i18n="home.cloud">Where the models live.</h2>
+          <p class="hero__lead" data-i18n="home.cloudLead">Training, storage, and serving sit in one place. Vertex AI, BigQuery, Cloud Storage, Cloud Run.</p>
+          <div class="nuvem">
+            <span>Vertex AI</span>
+            <span>BigQuery</span>
+            <span>Cloud Storage</span>
+            <span>Cloud Run</span>
+            <span>GKE</span>
+            <span>IAM</span>
+          </div>
+          <div class="fila-botoes">
+            <a class="botao" href="tecnologia.html" data-i18n="nav.stack">Stack</a>
+            <a class="botao botao--secundario" href="servicos.html#arquitetura" data-i18n="home.arch">Architecture</a>
+          </div>
+        </div>
+        <div class="caule">
+          <ol class="caule__lista">
+            <i class="caule__gota" aria-hidden="true"></i>
+            <li><strong data-i18n="home.s1t">Field</strong><span data-i18n="tech.p1">The file hits Cloud Storage with the plot id.</span></li>
+            <li><strong data-i18n="home.s2t">Data</strong><span data-i18n="tech.p2">The pipeline writes a row in BigQuery and keeps what it dropped.</span></li>
+            <li><strong data-i18n="home.s3t">Train</strong><span data-i18n="tech.p3">Vertex AI serves the pinned version for that crop.</span></li>
+            <li><strong data-i18n="home.s4t">Infer</strong><span data-i18n="tech.p4">Cloud Run returns the slip, or a miss.</span></li>
+            <li><strong data-i18n="home.s5t">Recommend</strong><span data-i18n="tech.p5">The dashboard shows the line in the operation’s words.</span></li>
+            <li><strong data-i18n="home.s6t">Adjust</strong><span data-i18n="tech.p6">The walk note returns and waits for the next version.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="para-quem">
+      <div class="container">
+        <div class="secao__intro">
+          <h2 id="para-quem" data-i18n="home.who">Who it is for</h2>
+          <p data-i18n="home.whoLead">Farms and co-ops that already collect data and still decide by eye.</p>
+        </div>
+        <div class="geo-grade">
+          <article class="geo-item">
+            <h3 data-i18n="home.w1t">Growers and co-ops</h3>
+            <p data-i18n="home.w1">A recommendation for this season, not an 80-page report.</p>
+          </article>
+          <article class="geo-item">
+            <h3 data-i18n="home.w2t">Operations with data</h3>
+            <p data-i18n="home.w2">Images, weather, plots, machines. If the data exists, the pipeline can read it.</p>
+          </article>
+          <article class="geo-item">
+            <h3 data-i18n="home.w3t">How we charge</h3>
+            <p data-i18n="home.w3">A subscription to the platform.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="cuidado">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="sec.kicker">Care</p>
+          <h2 id="cuidado" data-i18n="sec.title">Farm data stays with the operation.</h2>
+          <p data-i18n="sec.lead">A recommendation is useless if the farm cannot tell who opened the file.</p>
+        </div>
+        <div class="grade-densa">
+          <article class="ficha"><h3 data-i18n="sec.1t">IAM</h3><p data-i18n="sec.1">Who can see which farm is a setting, not a shared login.</p></article>
+          <article class="ficha"><h3 data-i18n="sec.2t">Source kept</h3><p data-i18n="sec.2">Every table row can point back at the file that made it.</p></article>
+          <article class="ficha"><h3 data-i18n="sec.3t">No resale</h3><p data-i18n="sec.3">We do not sell farm data. The subscription is for the software.</p></article>
+          <article class="ficha"><h3 data-i18n="sec.4t">A miss is logged</h3><p data-i18n="sec.4">When a reading does not fit, that line stays. It is how the next version gets better.</p></article>
+          <article class="ficha"><h3 data-i18n="sec.5t">Region with the setup</h3><p data-i18n="sec.5">The stack is Google Cloud. The region is chosen with the operation. The company is in Brazil.</p></article>
+          <article class="ficha"><h3 data-i18n="sec.6t">Contract before files</h3><p data-i18n="sec.6">Sensitive images can wait. The first note does not need them.</p></article>
+        </div>
+        <p class="fecho-secao"><a href="seguranca.html" data-i18n="sec.more">Security and data</a></p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="equipe-home">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="team.kicker">Team</p>
+          <h2 id="equipe-home" data-i18n="team.title">Five partners. One company.</h2>
+          <p data-i18n="team.lead">The names are the partners on the Brazilian registry. Photos and longer bios go up when each person publishes them. We do not invent titles.</p>
+        </div>
+        <div class="grade-pessoas grade-pessoas--cinco">
+          <article class="pessoa">
+            <span class="pessoa__monograma" aria-hidden="true">GL</span>
+            <span class="pessoa__cargo" data-i18n="team.roleAdmin">Managing partner</span>
+            <h3>Gerson Luis dos Santos Rodrigues Junior</h3>
+            <p data-i18n="team.gerson">Signs the company as managing partner. Santa Maria, Rio Grande do Sul.</p>
+          </article>
+          <article class="pessoa">
+            <span class="pessoa__monograma" aria-hidden="true">FM</span>
+            <span class="pessoa__cargo" data-i18n="team.role">Partner</span>
+            <h3>Fabio Mulinari dos Santos</h3>
+            <p data-i18n="team.fabio">Partner on the Brazilian registry of Fitocrops Agroscience LTDA.</p>
+          </article>
+          <article class="pessoa">
+            <span class="pessoa__monograma" aria-hidden="true">JR</span>
+            <span class="pessoa__cargo" data-i18n="team.role">Partner</span>
+            <h3>Jansen Rodrigo Pereira Santos</h3>
+            <p data-i18n="team.jansen">Partner on the Brazilian registry of Fitocrops Agroscience LTDA.</p>
+          </article>
+          <article class="pessoa">
+            <span class="pessoa__monograma" aria-hidden="true">JC</span>
+            <span class="pessoa__cargo" data-i18n="team.role">Partner</span>
+            <h3>Julio Carlos Pereira da Silva</h3>
+            <p data-i18n="team.julio">Partner on the Brazilian registry of Fitocrops Agroscience LTDA.</p>
+          </article>
+          <article class="pessoa">
+            <span class="pessoa__monograma" aria-hidden="true">VB</span>
+            <span class="pessoa__cargo" data-i18n="team.role">Partner</span>
+            <h3>Vinicios Duarte Bicca</h3>
+            <p data-i18n="team.vinicios">Partner on the Brazilian registry of Fitocrops Agroscience LTDA.</p>
+          </article>
+        </div>
+        <p class="nota-amostra" data-i18n="team.note">Managing partner signs for Fitocrops Agroscience LTDA. The others are partners on the same registry.</p>
+        <p class="fecho-secao"><a href="equipe.html" data-i18n="team.more">The team</a></p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="safra">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="safra.kicker">Season</p>
+          <h2 id="safra" data-i18n="safra.title">The window changes. The slip changes with it.</h2>
+          <p data-i18n="safra.lead">One product, four moments. The model is pinned to the moment the operation is in.</p>
+        </div>
+        <div class="grade-entradas">
+          <article class="entrada"><span class="entrada__ico">01</span><h3 data-i18n="safra.1t">Planting</h3><p data-i18n="safra.1">Stand, gaps, and whether the first pass should wait for the soil.</p></article>
+          <article class="entrada"><span class="entrada__ico">02</span><h3 data-i18n="safra.2t">Vegetative</h3><p data-i18n="safra.2">Canopy and the strips a person should walk this week.</p></article>
+          <article class="entrada"><span class="entrada__ico">03</span><h3 data-i18n="safra.3t">Reproductive</h3><p data-i18n="safra.3">The spray or irrigation window, joined to weather.</p></article>
+          <article class="entrada"><span class="entrada__ico">04</span><h3 data-i18n="safra.4t">Harvest</h3><p data-i18n="safra.4">What came off, written back.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="antes">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="antes.kicker">The difference</p>
+          <h2 id="antes" data-i18n="antes.title">Same farm. Two ways of deciding.</h2>
+        </div>
+        <div class="frente">
+          <article>
+            <h3 data-i18n="antes.aTitle">Without a version</h3>
+            <ul>
+              <li data-i18n="antes.a1">The image sits in a folder.</li>
+              <li data-i18n="antes.a2">The weather sits in another tab.</li>
+              <li data-i18n="antes.a3">The note is in a notebook.</li>
+              <li data-i18n="antes.a4">The call cannot be opened next month.</li>
+              <li data-i18n="antes.a5">A miss looks like confidence.</li>
+            </ul>
+          </article>
+          <article>
+            <h3 data-i18n="antes.bTitle">With Fitocrops</h3>
+            <ul>
+              <li data-i18n="antes.b1">The image lands with a plot id.</li>
+              <li data-i18n="antes.b2">Weather is joined to that plot.</li>
+              <li data-i18n="antes.b3">The note comes back into the same history.</li>
+              <li data-i18n="antes.b4">The slip names the version that spoke.</li>
+              <li data-i18n="antes.b5">A miss is a line, not a guess.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="um-dia">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="dia.kicker">A day</p>
+          <h2 id="um-dia" data-i18n="dia.title">How a reading is supposed to move.</h2>
+          <p data-i18n="dia.lead">A sample day. Not a farm we already run.</p>
+        </div>
+        <ol class="marco">
+          <li><article><span class="marco__hora" data-i18n="dia.1h">06:40</span><div><h3 data-i18n="dia.1t">The file arrives</h3><p data-i18n="dia.1">Images from the edge of plot 04.</p></div></article></li>
+          <li><article><span class="marco__hora" data-i18n="dia.2h">07:10</span><div><h3 data-i18n="dia.2t">The row is written</h3><p data-i18n="dia.2">Cloud Storage keeps the file.</p></div></article></li>
+          <li><article><span class="marco__hora" data-i18n="dia.3h">07:20</span><div><h3 data-i18n="dia.3t">The version answers</h3><p data-i18n="dia.3">Cloud Run returns the slip, or a miss.</p></div></article></li>
+          <li><article><span class="marco__hora" data-i18n="dia.4h">07:30</span><div><h3 data-i18n="dia.4t">The dashboard opens</h3><p data-i18n="dia.4">One line. No notebook.</p></div></article></li>
+          <li><article><span class="marco__hora" data-i18n="dia.5h">11:00</span><div><h3 data-i18n="dia.5t">Someone walks</h3><p data-i18n="dia.5">The person decides. The model does not.</p></div></article></li>
+          <li><article><span class="marco__hora" data-i18n="dia.6h">18:00</span><div><h3 data-i18n="dia.6t">The note returns</h3><p data-i18n="dia.6">What the walk found waits for the next version.</p></div></article></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="chao">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="geo.kicker">Ground</p>
+          <h2 id="chao" data-i18n="geo.title">Drawn from the south of Brazil, outward.</h2>
+          <p data-i18n="geo.lead">The company sits in Santa Maria. This is scope, not a client map.</p>
+        </div>
+        <div class="grade-entradas">
+          <article class="ficha"><h3 data-i18n="geo.1t">Rio Grande do Sul</h3><p data-i18n="geo.1">Home. Rice, soy, wheat, corn, pasture.</p></article>
+          <article class="ficha"><h3 data-i18n="geo.2t">Santa Catarina</h3><p data-i18n="geo.2">Shorter fields, more relief.</p></article>
+          <article class="ficha"><h3 data-i18n="geo.3t">Paraná</h3><p data-i18n="geo.3">Soy and corn at scale.</p></article>
+          <article class="ficha"><h3 data-i18n="geo.4t">Cerrado</h3><p data-i18n="geo.4">A later version, when an operation there brings the data.</p></article>
+        </div>
+        <p class="nota-amostra" data-i18n="geo.note">We do not draw a coverage map of farms.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="caminho-empresa">
+      <div class="container">
+        <div class="secao__intro">
+          <p class="familia-servicos__titulo" data-i18n="road.kicker">Road</p>
+          <h2 id="caminho-empresa" data-i18n="road.title">Where the work actually is.</h2>
+        </div>
+        <div class="grade-entradas">
+          <article class="dor"><h3 data-i18n="road.1t">Open</h3><p data-i18n="road.1">Company active since 27 June 2025.</p></article>
+          <article class="dor"><h3 data-i18n="road.2t">In build</h3><p data-i18n="road.2">Five modules on Google Cloud.</p></article>
+          <article class="dor"><h3 data-i18n="road.3t">Not yet</h3><p data-i18n="road.3">A first operation, a number we can print.</p></article>
+          <article class="dor"><h3 data-i18n="road.4t">Never on this site</h3><p data-i18n="road.4">Invented hectares, invented clients, a badge we did not receive.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="onde">
+      <div class="container">
+        <p class="familia-servicos__titulo" data-i18n="home.co">Company</p>
+        <h2 id="onde" data-i18n="home.founded">Brazil. Founded 2025.</h2>
+        <p data-i18n="home.coLead">Fitocrops Agroscience LTDA. CNPJ 61.479.389/0001-94. Santa Maria, Rio Grande do Sul. Small company, active.</p>
+        <figure class="mapa-pontos">
+          <img src="assets/img/mapa-pontos.svg" width="920" height="420" alt="Dotted map with Santa Maria, Brazil marked" data-i18n-alt="map.alt">
+        </figure>
+        <p class="fecho-secao">
+          <a href="sobre.html" data-i18n="home.whoBuilds">The company</a>
+          <a href="faq.html" data-i18n="home.faq">Read the FAQ</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="faq-curto">
+      <div class="container">
+        <div class="secao__intro">
+          <h2 id="faq-curto" data-i18n="faq.homeTitle">Questions, answered short</h2>
+        </div>
+        <div class="grade-densa">
+          <article class="ficha"><h3 data-i18n="faq.q1">What does Fitocrops build?</h3><p data-i18n="faq.a1">An agricultural AI platform.</p></article>
+          <article class="ficha"><h3 data-i18n="faq.q4">Is the product live?</h3><p data-i18n="faq.a4">The company opened on 27 June 2025. We are building the product.</p></article>
+          <article class="ficha"><h3 data-i18n="faq.q10">Does Fitocrops replace the agronomist?</h3><p data-i18n="faq.a10">No.</p></article>
+          <article class="ficha"><h3 data-i18n="faq.q13">Do you sell farm data?</h3><p data-i18n="faq.a13">No.</p></article>
+          <article class="ficha"><h3 data-i18n="faq.q16">Where do you run?</h3><p data-i18n="faq.a16">On Google Cloud.</p></article>
+          <article class="ficha"><h3 data-i18n="faq.q17">Are you in a Google program?</h3><p data-i18n="faq.a17">The stack is Google Cloud. This site does not display a program badge.</p></article>
+        </div>
+        <p class="fecho-secao"><a href="faq.html" data-i18n="home.faq">Read the FAQ</a></p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="chamada">
+          <p class="familia-servicos__titulo" data-i18n="nav.contact">Contact</p>
+          <h2 data-i18n="cta.bandTitle">Bring the crop and the data you already have.</h2>
+          <p data-i18n="cta.bandLead">We answer with the fit, the gap, and whether a first version makes sense. Terms come after that, not before.</p>
+          <div class="fila-botoes">
+            <a class="botao" href="contato.html" data-i18n="cta.talk">Talk to us</a>
+            <a class="botao botao--secundario" href="servicos.html" data-i18n="cta.product">Read the product</a>
+            <a class="botao botao--secundario" href="equipe.html" data-i18n="cta.team">See the team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape superficie-escura">
+    <div class="container">
+      <div class="rodape__grade">
+        <div class="rodape__coluna">
+          <a class="rodape__marca" href="index.html">
+            <img src="assets/img/logo-provisoria-branca.svg" width="220" height="40" alt="Fitocrops Agroscience">
+          </a>
+          <p>Fitocrops Agroscience</p>
+          <p>Fitocrops Agroscience LTDA</p>
+          <p>61.479.389/0001-94</p>
+        </div>
+        <div class="rodape__coluna">
+          <h2 data-i18n="footer.contact">Contact</h2>
+          <ul>
+            <li><a href="mailto:contact@fitocropsgroups.com">contact@fitocropsgroups.com</a></li>
+            <li>Santa Maria/RS</li>
+            <li>Av. Roraima, 1000 — Edif. 02, Sala 25, Coworking Módulo 2, Camobi</li>
+            <li>CEP 97105-340</li>
+          </ul>
+        </div>
+        <div class="rodape__coluna">
+          <h2 data-i18n="footer.nav">Navigate</h2>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="servicos.html" data-i18n="nav.product">Product</a></li>
+            <li><a href="tecnologia.html" data-i18n="nav.stack">Stack</a></li>
+            <li><a href="culturas.html" data-i18n="nav.crops">Crops</a></li>
+            <li><a href="metodo.html" data-i18n="nav.method">Method</a></li>
+            <li><a href="equipe.html" data-i18n="nav.team">Team</a></li>
+            <li><a href="sobre.html" data-i18n="nav.about">About</a></li>
+            <li><a href="seguranca.html" data-i18n="nav.security">Security</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="contato.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="privacidade.html" data-i18n="nav.privacy">Privacy</a></li>
+            <li><a href="termos.html" data-i18n="nav.terms">Terms</a></li>
+          </ul>
+        </div>
+        <div class="rodape__coluna">
+          <h2 data-i18n="footer.company">Company</h2>
+          <p data-i18n="footer.lead">Managing partner: Gerson Luis dos Santos Rodrigues Junior</p>
+          <p data-i18n="footer.founded">Founded 27 June 2025</p>
+          <p><a href="equipe.html" data-i18n="nav.team">Team</a></p>
+          <p><a href="sobre.html" data-i18n="footer.who">About us</a></p>
+        </div>
+      </div>
+      <div class="rodape__base">
+        <p data-i18n="footer.legal">Fitocrops Agroscience LTDA. Agricultural AI software.</p>
+        <p><a href="privacidade.html" data-i18n="nav.privacy">Privacy</a> · <a href="termos.html" data-i18n="nav.terms">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

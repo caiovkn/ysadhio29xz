@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" width="560" height="380" role="img">
+  <title>Grafico das tres frentes no mesmo recorte</title>
+  <defs>
+    <linearGradient id="painel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121820"/>
+      <stop offset="1" stop-color="#0A0E14"/>
+    </linearGradient>
+    <linearGradient id="linha" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="558" height="378" rx="18" fill="url(#painel)" stroke="#1C2430"/>
+  <text x="28" y="36" fill="#A78BFA" font-family="Segoe UI, Arial, sans-serif" font-size="10" letter-spacing="2">RECORTE</text>
+  <text x="28" y="58" fill="#F4F6F8" font-family="Segoe UI, Arial, sans-serif" font-size="16">Tres frentes no mesmo caminho</text>
+  <g stroke="#1C2430" stroke-width="1">
+    <path d="M28 210 H532"/>
+    <path d="M28 250 H532"/>
+    <path d="M28 290 H532"/>
+    <path d="M28 330 H532"/>
+    <path d="M154 190 V330"/>
+    <path d="M280 190 V330"/>
+    <path d="M406 190 V330"/>
+  </g>
+  <path d="M40 300 C110 280 150 240 220 250 C290 260 330 210 400 220 C460 228 500 200 532 190" fill="none" stroke="url(#linha)" stroke-width="2.5"/>
+  <circle cx="220" cy="250" r="4" fill="#A78BFA"/>
+  <circle cx="400" cy="220" r="4" fill="#A78BFA"/>
+  <circle cx="532" cy="190" r="4" fill="#C4B5FD"/>
+  <rect x="28" y="80" width="150" height="72" rx="12" fill="#0C1118" stroke="#1C2430"/>
+  <circle cx="48" cy="104" r="6" fill="none" stroke="#A78BFA" stroke-width="1.6"/>
+  <text x="64" y="108" fill="#F4F6F8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Juridico</text>
+  <text x="48" y="132" fill="#8B95A5" font-family="Segoe UI, Arial, sans-serif" font-size="11">contrato e dever</text>
+  <rect x="205" y="80" width="150" height="72" rx="12" fill="#0C1118" stroke="#1C2430"/>
+  <rect x="225" y="98" width="10" height="10" fill="none" stroke="#A78BFA" stroke-width="1.6"/>
+  <text x="241" y="108" fill="#F4F6F8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Digital + compliance</text>
+  <text x="225" y="132" fill="#8B95A5" font-family="Segoe UI, Arial, sans-serif" font-size="11">acesso e politica</text>
+  <rect x="382" y="80" width="150" height="72" rx="12" fill="#0C1118" stroke="#A78BFA"/>
+  <path d="M400 100 l6 6 10-12" fill="none" stroke="#A78BFA" stroke-width="1.6"/>
+  <text x="424" y="108" fill="#F4F6F8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Auditoria</text>
+  <text x="400" y="132" fill="#8B95A5" font-family="Segoe UI, Arial, sans-serif" font-size="11">controle e evidencia</text>
+  <text x="28" y="360" fill="#8B95A5" font-family="Segoe UI, Arial, sans-serif" font-size="11">Ilustracao do recorte - sem metrica, sem resultado.</text>
+</svg>

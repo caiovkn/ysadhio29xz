@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="prod.title">Product | Fitocrops Agroscience</title>
+  <meta name="description" content="Fitocrops modules: field vision, data, Vertex AI models, inference, and the grower dashboard." data-i18n-content="prod.description">
+  <link rel="canonical" href="https://[DOMÍNIO]/servicos.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fitocrops Agroscience">
+  <meta property="og:locale" content="en_US" data-i18n-content="meta.ogLocale">
+  <meta property="og:title" content="Product | Fitocrops Agroscience" data-i18n-content="prod.title">
+  <meta property="og:description" content="Fitocrops modules: field vision, data, Vertex AI models, inference, and the grower dashboard." data-i18n-content="prod.description">
+  <meta property="og:url" content="https://[DOMÍNIO]/servicos.html">
+  <meta property="og:image" content="https://[DOMÍNIO]/assets/img/og-default.png">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/vitrine.css">
+  <link rel="stylesheet" href="assets/css/campo.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="assets/js/copy.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo" data-i18n="skip">Skip to main content</a>
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <a class="cabecalho__marca" href="index.html">
+        <img src="assets/img/logo-provisoria.svg" width="220" height="40" alt="Fitocrops Agroscience — home" data-i18n-alt="logo.alt">
+      </a>
+      <button class="cabecalho__alternador somente-js" type="button" id="alternador-menu" aria-expanded="false" aria-controls="menu-principal">
+        <span class="cabecalho__alternador-barras" aria-hidden="true"></span>
+        <span class="visualmente-oculto" data-i18n="nav.open">Open menu</span>
+      </button>
+      <nav class="cabecalho__nav" id="menu-principal" aria-label="Main" data-i18n-aria="nav.label">
+                <ul class="menu">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="servicos.html" aria-current="page" data-i18n="nav.product">Product</a></li>
+          <li><a href="tecnologia.html" data-i18n="nav.stack">Stack</a></li>
+          <li><a href="culturas.html" data-i18n="nav.crops">Crops</a></li>
+          <li><a href="metodo.html" data-i18n="nav.method">Method</a></li>
+          <li><a href="equipe.html" data-i18n="nav.team">Team</a></li>
+          <li><a href="sobre.html" data-i18n="nav.about">About</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="contato.html" class="menu__destaque" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cabecalho__acoes">
+        <div class="idioma" role="group" aria-label="Language" data-i18n-aria="lang.label">
+          <button type="button" class="idioma__btn" data-lang-set="en" aria-pressed="true">EN</button>
+          <button type="button" class="idioma__btn" data-lang-set="pt" aria-pressed="false">PT</button>
+        </div>
+        <a class="botao cabecalho__cta" href="contato.html" data-i18n="cta.talk">Talk to us</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="secao">
+      <div class="container">
+        <div class="conteudo-medida empilha">
+          <p class="familia-servicos__titulo" data-i18n="prod.kicker">Product</p>
+          <h1 data-i18n="prod.h1">The platform, module by module</h1>
+          <p data-i18n="prod.lead">A software product. A subscription. The model sits in the middle.</p>
+        </div>
+        <div class="fila-botoes">
+          <a class="botao botao--secundario" href="#visao" data-i18n="prod.vis">Vision</a>
+          <a class="botao botao--secundario" href="#dados" data-i18n="prod.dat">Data</a>
+          <a class="botao botao--secundario" href="#modelos" data-i18n="prod.mod">Models</a>
+          <a class="botao botao--secundario" href="#inferencia" data-i18n="prod.inf">Inference</a>
+          <a class="botao botao--secundario" href="#painel" data-i18n="prod.pan">Dashboard</a>
+          <a class="botao botao--secundario" href="#arquitetura" data-i18n="prod.arc">Architecture</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="modulos">
+      <div class="container">
+        <h2 id="modulos" class="visualmente-oculto" data-i18n="prod.mods">Modules</h2>
+
+        <article class="secao-servico" id="visao">
+          <h3 data-i18n="prod.v1">Field vision</h3>
+          <h4 data-i18n="prod.does">What it does</h4>
+          <p data-i18n="prod.v2">Takes an image or a field reading and marks what the operation should look at in this window. It does not replace an agronomist. It covers what one pair of eyes misses.</p>
+          <h4 data-i18n="prod.gives">What you get</h4>
+          <ul class="lista-simples">
+            <li data-i18n="prod.v3">A cut of the plot you sent</li>
+            <li data-i18n="prod.v4">What the model saw, with the model version</li>
+            <li data-i18n="prod.v5">What this reading left out</li>
+          </ul>
+        </article>
+
+        <article class="secao-servico" id="dados">
+          <h3 data-i18n="prod.d1">Data pipeline</h3>
+          <h4 data-i18n="prod.does">What it does</h4>
+          <p data-i18n="prod.d2">Puts images, weather, machines, and handwritten notes into one history. Cloud Storage on intake. BigQuery for the tables.</p>
+          <h4 data-i18n="prod.gives">What you get</h4>
+          <ul class="lista-simples">
+            <li data-i18n="prod.d3">Versioned data, with a source</li>
+            <li data-i18n="prod.d4">A table ready for the next training run</li>
+            <li data-i18n="prod.d5">A trail of what came in and what was dropped</li>
+          </ul>
+        </article>
+
+        <article class="secao-servico" id="modelos">
+          <h3 data-i18n="prod.o1">Models</h3>
+          <h4 data-i18n="prod.does">What it does</h4>
+          <p data-i18n="prod.o2">The crop problem becomes an experiment. Train, score, and keep the version on Vertex AI.</p>
+          <h4 data-i18n="prod.gives">What you get</h4>
+          <ul class="lista-simples">
+            <li data-i18n="prod.o3">Model version and the assumptions behind it</li>
+            <li data-i18n="prod.o4">What the model does not cover</li>
+            <li data-i18n="prod.o5">A cutoff agreed with the operation</li>
+          </ul>
+        </article>
+
+        <article class="secao-servico" id="inferencia">
+          <h3 data-i18n="prod.i1">Inference</h3>
+          <h4 data-i18n="prod.does">What it does</h4>
+          <p data-i18n="prod.i2">An endpoint the operation calls. The answer stays in that frame. Cloud Run or GKE when volume grows.</p>
+          <h4 data-i18n="prod.gives">What you get</h4>
+          <ul class="lista-simples">
+            <li data-i18n="prod.i3">A reply with the model version used</li>
+            <li data-i18n="prod.i4">A log of the question, for the next pass</li>
+            <li data-i18n="prod.i5">A clear miss when the data does not fit</li>
+          </ul>
+        </article>
+
+        <article class="secao-servico" id="painel">
+          <h3 data-i18n="prod.p1">Grower dashboard</h3>
+          <h4 data-i18n="prod.does">What it does</h4>
+          <p data-i18n="prod.p2">The face of the product. Recommendation, history, and the next step. The person in the field does not open a Colab.</p>
+          <h4 data-i18n="prod.gives">What you get</h4>
+          <ul class="lista-simples">
+            <li data-i18n="prod.p3">A screen for the season or the plot you follow</li>
+            <li data-i18n="prod.p4">A recommendation in the operation’s words</li>
+            <li data-i18n="prod.p5">How to send the next batch</li>
+          </ul>
+        </article>
+
+        <article class="secao-servico" id="arquitetura">
+          <h3 data-i18n="prod.a1">Architecture</h3>
+          <h4 data-i18n="prod.a2">The stack</h4>
+          <p data-i18n="prod.a3">Models train and serve on Vertex AI. History sits in BigQuery. Raw files go to Cloud Storage. The API runs on Cloud Run.</p>
+          <div class="nuvem">
+            <span data-i18n="prod.c1">Vertex AI — train and serve</span>
+            <span data-i18n="prod.c2">BigQuery — history</span>
+            <span data-i18n="prod.c3">Cloud Storage — raw files</span>
+            <span data-i18n="prod.c4">Cloud Run — API</span>
+            <span data-i18n="prod.c5">GKE — when the load asks for it</span>
+            <span data-i18n="prod.c6">IAM — who can see what</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="secao" aria-labelledby="recibo">
+      <div class="container duas">
+        <article class="recorte">
+          <h2 id="recibo" data-i18n="prod.sampleTitle">A slip, in full</h2>
+          <p data-i18n="prod.sample">Plot 04, west edge, this week.</p>
+        </article>
+        <div class="caule">
+          <ol class="caule__lista">
+            <i class="caule__gota" aria-hidden="true"></i>
+            <li><strong>Cloud Storage</strong><span data-i18n="tech.p1">The file hits Cloud Storage with the plot id.</span></li>
+            <li><strong>BigQuery</strong><span data-i18n="tech.p2">The pipeline writes a row in BigQuery.</span></li>
+            <li><strong>Vertex AI</strong><span data-i18n="tech.p3">Vertex AI serves the pinned version.</span></li>
+            <li><strong>Cloud Run</strong><span data-i18n="tech.p4">Cloud Run returns the slip, or a miss.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section class="secao">
+      <div class="container">
+        <p class="fecho-secao">
+          <a href="tecnologia.html" data-i18n="prod.toStack">See the stack</a>
+          <a href="metodo.html" data-i18n="prod.toMethod">See the method</a>
+          <a href="culturas.html" data-i18n="prod.toCrops">See the crops</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <p class="fecho-secao">
+          <a href="contato.html" data-i18n="cta.talk">Talk to us</a>
+          <a href="sobre.html" data-i18n="prod.company">The company</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape superficie-escura">
+    <div class="container">
+      <div class="rodape__grade">
+        <div class="rodape__coluna">
+          <a class="rodape__marca" href="index.html">
+            <img src="assets/img/logo-provisoria-branca.svg" width="220" height="40" alt="Fitocrops Agroscience">
+          </a>
+          <p>Fitocrops Agroscience</p>
+          <p>Fitocrops Agroscience LTDA</p>
+          <p>61.479.389/0001-94</p>
+        </div>
+        <div class="rodape__coluna">
+          <h2 data-i18n="footer.contact">Contact</h2>
+          <ul>
+            <li><a href="mailto:contact@fitocropsgroups.com">contact@fitocropsgroups.com</a></li>
+            <li>Santa Maria/RS</li>
+            <li>Av. Roraima, 1000 — Edif. 02, Sala 25, Coworking Módulo 2, Camobi</li>
+            <li>CEP 97105-340</li>
+          </ul>
+        </div>
+        <div class="rodape__coluna">
+          <h2 data-i18n="footer.nav">Navigate</h2>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="servicos.html" data-i18n="nav.product">Product</a></li>
+            <li><a href="tecnologia.html" data-i18n="nav.stack">Stack</a></li>
+            <li><a href="culturas.html" data-i18n="nav.crops">Crops</a></li>
+            <li><a href="metodo.html" data-i18n="nav.method">Method</a></li>
+            <li><a href="equipe.html" data-i18n="nav.team">Team</a></li>
+            <li><a href="sobre.html" data-i18n="nav.about">About</a></li>
+            <li><a href="seguranca.html" data-i18n="nav.security">Security</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="contato.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="privacidade.html" data-i18n="nav.privacy">Privacy</a></li>
+            <li><a href="termos.html" data-i18n="nav.terms">Terms</a></li>
+          </ul>
+        </div>
+        <div class="rodape__coluna">
+          <h2 data-i18n="footer.company">Company</h2>
+          <p data-i18n="footer.lead">Managing partner: Gerson Luis dos Santos Rodrigues Junior</p>
+          <p data-i18n="footer.founded">Founded 27 June 2025</p>
+          <p><a href="equipe.html" data-i18n="nav.team">Team</a></p>
+          <p><a href="sobre.html" data-i18n="footer.who">About us</a></p>
+        </div>
+      </div>
+      <div class="rodape__base">
+        <p data-i18n="footer.legal">Fitocrops Agroscience LTDA. Agricultural AI software.</p>
+        <p><a href="privacidade.html" data-i18n="nav.privacy">Privacy</a> · <a href="termos.html" data-i18n="nav.terms">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" role="img">
+  <title>Fitocrops Agroscience</title>
+  <polygon points="10,8 18,12.5 18,21.5 10,26 2,21.5 2,12.5" fill="none" stroke="#A78BFA" stroke-width="1.4"/>
+  <circle cx="10" cy="17" r="2" fill="#A78BFA"/>
+  <text x="26" y="25" fill="#F4F6F8" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">Fitocrops Agroscience</text>
+</svg>

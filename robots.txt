@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /sobre.html
+Allow: /servicos.html
+Allow: /contato.html
+Allow: /faq.html
+Disallow: /documentos/
+Disallow: /ferramentas/
+
+Sitemap: https://[DOMÍNIO]/sitemap.xml
